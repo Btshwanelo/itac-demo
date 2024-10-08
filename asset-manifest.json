@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/itac-demo/static/css/main.cb1941b3.css",
+    "main.js": "/itac-demo/static/js/main.04b182c4.js",
+    "static/media/login-banner.png": "/itac-demo/static/media/login-banner.954381b10ecdaa05c3cc.png",
+    "static/media/itac-logo.jpeg": "/itac-demo/static/media/itac-logo.b1dd936ef642a383cb32.jpeg",
+    "index.html": "/itac-demo/index.html",
+    "main.cb1941b3.css.map": "/itac-demo/static/css/main.cb1941b3.css.map",
+    "main.04b182c4.js.map": "/itac-demo/static/js/main.04b182c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb1941b3.css",
+    "static/js/main.04b182c4.js"
+  ]
+}
