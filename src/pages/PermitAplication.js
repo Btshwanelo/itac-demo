@@ -66,6 +66,31 @@ const PermitApplicationForm = () => {
     navigate("/thank-you");
   };
 
+  const dummyData = {
+    nameOfBusiness: "Global Trade Enterprises",
+    tradeName: "GTE",
+    customCodeNumber: "CUST123456",
+    ccRegistration: "2023/123456/07",
+    businessCommenceDate: "2020-01-15",
+    contactPerson: "John Doe",
+    telephoneNumber: "+27 11 123 4567",
+    cellularNumber: "+27 82 123 4567",
+    faxNumber: "+27 11 765 4321",
+    emailAddress: "johndoe@gte.co.za",
+    taxNumber: "TX1234567890",
+    vatNumber: "VAT987654321",
+    province: "Gauteng",
+    numberOfEmployees: "50",
+    businessType: "Partnership",
+    descriptionOfGoods: "Electronic equipment and accessories",
+    warehouseSize: "2000 sqm",
+    streetAddress: "123 Business Park Avenue",
+    suburb: "Industrial Zone",
+    postalProvince: "Gauteng",
+    postalCode: "2000",
+    postalAddressSameAsPhysical: true,
+  };
+
   const permitApplications = [
     {
       fileName: "ITAC Anti-Dumping Application Questionnaire",
@@ -200,10 +225,13 @@ const PermitApplicationForm = () => {
                 Application
               </h1>
             </div>
-            {/* <button className="bg-green-700 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+            <button
+              onClick={() => setFormData(dummyData)}
+              className="bg-green-700 hover:bg-green-700 text-white font-bold py-2 px-4 rounded inline-flex items-center"
+            >
               <Plus className="ml-2 h-4 w-4" />
-              Apply for Permits
-            </button> */}
+              populate
+            </button>
           </div>
         </header>
 
