@@ -14,7 +14,7 @@ const LoginScreen = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle login logic here
-    console.log("Login submitted", { email, password, rememberMe });
+    // console.log("Login submitted", { email, password, rememberMe });
     navigate("/dashboard");
   };
 
