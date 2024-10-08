@@ -513,7 +513,7 @@ const InputField = ({
       value={value}
       onChange={onChange}
       required={required}
-      className="mt-1 py-2 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:outline-none  focus:border-blue-500  focus:ring-blue-500 focus:border-blue-500"
+      className="mt-1 py-2 block w-full shadow-sm sm:text-sm px-3 border-gray-300 rounded-md focus:outline  focus:border-blue-500  focus:ring-blue-500 focus:border-blue-500"
     />
   </div>
 );
@@ -530,7 +530,7 @@ const SelectField = ({ label, name, value, onChange, options, required }) => (
       value={value}
       onChange={onChange}
       required={required}
-      className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline sm:text-sm"
     >
       <option value="">Select an option</option>
       {options.map((option) => (
