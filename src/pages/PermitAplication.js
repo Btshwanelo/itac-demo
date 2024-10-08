@@ -59,10 +59,11 @@ const PermitApplicationForm = () => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     // Handle form submission logic here
-    Swal.fire({
-      icon: "success",
-      text: "Application created sccessfully !",
-    }).then(() => navigate("/dashboard"));
+    // Swal.fire({
+    //   icon: "success",
+    //   text: "Application created sccessfully !",
+    // }).then(() => navigate("/dashboard"));
+    navigate("/thank-you");
   };
 
   const permitApplications = [
