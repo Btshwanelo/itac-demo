@@ -8,6 +8,8 @@ import {
   Users,
   FileQuestion,
   MoreVertical,
+  CircleUser,
+  LogOut,
   ChevronDown,
   Search,
   Plus,
