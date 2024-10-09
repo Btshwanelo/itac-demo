@@ -66,6 +66,16 @@ const Dashboard = () => {
     },
   ];
 
+  const applications = [
+    "Import Permit for Commercial purposes",
+    "Import Permit for Commercial purposes Annexure",
+    "Import of second hand or used Passenger vehicle",
+    "IE Information document to complete the IE462 form",
+    "Permit to Import goods for Personal use",
+    "Permit to Import goods for Personal use Annexure",
+    "Retreaders tyre casing sworn affidavit",
+  ];
+
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
@@ -164,52 +174,19 @@ const Dashboard = () => {
                 tabindex="-1"
               >
                 <div class="py-1" role="none">
-                  <a
-                    href="#"
-                    className="block border-b font-semibold px-4 py-2 text-sm text-gray-700   hover:bg-green-700 hover:text-white"
-                    role="menuitem"
-                    tabindex="-1"
-                    id="menu-item-0"
-                    onClick={() => navigate("/application")}
-                  >
-                    ITAC Anti-Dumping Application Questionnaire{" "}
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 font-semibold text-sm text-gray-700 hover:bg-green-700 hover:text-white"
-                    role="menuitem"
-                    tabindex="-1"
-                    id="menu-item-1"
-                  >
-                    ITAC Countervailing Application Questionnaire
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-green-700 hover:text-white"
-                    role="menuitem"
-                    tabindex="-1"
-                    id="menu-item-2"
-                  >
-                    ITAC Exporter Questionnaire
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-green-700 hover:text-white"
-                    role="menuitem"
-                    tabindex="-1"
-                    id="menu-item-2"
-                  >
-                    ITAC Safeguard Application Questionnaire{" "}
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm font-semibold text-gray-700 hover:bg-green-700 hover:text-white"
-                    role="menuitem"
-                    tabindex="-1"
-                    id="menu-item-2"
-                  >
-                    ITAC Safeguard Application Questionnaire{" "}
-                  </a>
+                  {applications.map((item, index) => (
+                    <a
+                      key={index}
+                      href="#"
+                      className="block border-b font-semibold px-4 py-2 text-sm text-gray-700   hover:bg-green-700 hover:text-white"
+                      role="menuitem"
+                      tabindex="-1"
+                      id="menu-item-0"
+                      onClick={() => navigate("/application")}
+                    >
+                      {item}
+                    </a>
+                  ))}
                 </div>
               </div>
             )}
