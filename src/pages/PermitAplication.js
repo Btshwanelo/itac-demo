@@ -530,7 +530,7 @@ const SelectField = ({ label, name, value, onChange, options, required }) => (
       value={value}
       onChange={onChange}
       required={required}
-      className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline sm:text-sm"
+      className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-[#fff] rounded-md shadow-sm focus:outline sm:text-sm"
     >
       <option value="">Select an option</option>
       {options.map((option) => (
