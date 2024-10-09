@@ -138,7 +138,7 @@ const PermitApplicationForm = () => {
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
       <aside
-        className={`bg-white w-64 min-h-screen p-4 ${
+        className={`bg-white w-64 min-h-screen relative p-4 ${
           isSidebarOpen ? "block" : "hidden"
         } md:block`}
       >
@@ -150,14 +150,35 @@ const PermitApplicationForm = () => {
             style={{ maxWidth: "65%" }}
           />
         </div>
-        <nav>
+        <nav className="mb-auto">
           <SidebarLink icon={<Home />} text="Home" active />
           <SidebarLink icon={<FileText />} text="Contracts" hasSubmenu />
           <SidebarLink icon={<DollarSign />} text="Billing" />
           <SidebarLink icon={<Users />} text="Import & Export Control" />
-          <SidebarLink icon={<FileQuestion />} text="Log a case" />
         </nav>
+        {/* <SidebarLink icon={<FileQuestion />} text="Log a case" /> */}
+        <div className="absolute bottom-0  ">
+          <a
+            href="#"
+            className={` flex items-center space-x-2 bottom-4 p-2 rounded-lg mb-2 ${"text-gray-600 hover:bg-gray-50"}`}
+          >
+            <FileQuestion />
+            <span className="font-semibold">Log a case</span>
+            {/* {hasSubmenu && <ChevronDown className="ml-auto h-4 w-4" />} */}
+          </a>
+          <a
+            href="#"
+            className={` flex items-center space-x-2 bottom-4 p-2 rounded-lg mb-2 ${"text-gray-600 hover:bg-gray-50"}`}
+          >
+            <CircleUser />
+            <span className="font-semibold " style={{ marginRight: "70px" }}>
+              Zuko M
+            </span>
+            <LogOut />
+          </a>
+        </div>
       </aside>
+
       {/* <header className="bg-white shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
