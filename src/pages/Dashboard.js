@@ -12,7 +12,7 @@ import {
   Search,
   Plus,
 } from "lucide-react";
-import ItacLogo from "../assets/images/itac-logo.jpeg";
+import ItacLogo from "../assets/images/dcs-logo.png";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
@@ -93,10 +93,9 @@ const Dashboard = () => {
           />
         </div>
         <nav className="mb-auto">
-          <SidebarLink icon={<Home />} text="Home" active />
-          <SidebarLink icon={<FileText />} text="Contracts" hasSubmenu />
-          <SidebarLink icon={<DollarSign />} text="Billing" />
-          <SidebarLink icon={<Users />} text="Import & Export Control" />
+          <SidebarLink icon={<Home />} text="Invoice" active />
+          <SidebarLink icon={<FileText />} text="Purchase Order" />
+          <SidebarLink icon={<DollarSign />} text="Reques for Qoute" />
         </nav>
         {/* <SidebarLink icon={<FileQuestion />} text="Log a case" /> */}
         <div className="absolute bottom-0  ">

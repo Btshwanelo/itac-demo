@@ -5,6 +5,9 @@ import Dashboard from "./pages/Dashboard";
 import PermitApplicationForm from "./pages/PermitAplication";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ThankYouScreen from "./pages/ThankYouScreen";
+import Invoice from "./pages/Invoice";
+import PurchaseOrder from "./pages/PurchaseOrder";
+import RequestForQoute from "./pages/RequestForQoute";
 
 function App() {
   useEffect(() => {
@@ -28,6 +31,9 @@ function App() {
         <Routes>
           <Route path="/" element={<LoginScreen />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/invoices" element={<Invoice />} />
+          <Route path="/purchase-order" element={<PurchaseOrder />} />
+          <Route path="/request-qoute" element={<RequestForQoute />} />
           <Route path="/application" element={<PermitApplicationForm />} />
           <Route path="/thank-you" element={<ThankYouScreen />} />
         </Routes>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Check } from "lucide-react";
-import ItacLogo from "../assets/images/itac-logo.jpeg";
+import ItacLogo from "../assets/images/dcs-logo.png";
 import { useNavigate } from "react-router-dom";
 
 const ThankYouScreen = () => {

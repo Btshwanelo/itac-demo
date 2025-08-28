@@ -14,7 +14,7 @@ import {
   Search,
   Plus,
 } from "lucide-react";
-import ItacLogo from "../assets/images/itac-logo.jpeg";
+import ItacLogo from "../assets/images/dcs-logo.png";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 

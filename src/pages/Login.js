@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AArrowDown } from "lucide-react";
 import BackgroundLogo from "../assets/images/login-banner.png";
-import ItacLogo from "../assets/images/itac-logo.jpeg";
+import ItacLogo from "../assets/images/dcs-logo.png";
 import SocialLogo from "../assets/images/Social-icon.png";
 import { useNavigate } from "react-router-dom";
 
@@ -15,7 +15,7 @@ const LoginScreen = () => {
     e.preventDefault();
     // Handle login logic here
     // console.log("Login submitted", { email, password, rememberMe });
-    navigate("/dashboard");
+    navigate("/invoices");
   };
 
   return (
